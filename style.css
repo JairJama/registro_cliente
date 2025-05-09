@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to right, #fa74c2, #fb3092); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form h2 {
+    color: #ffffff;
+    font-size: 0.9 rem;
+    text-align:left;
+    margin-bottom: 1rem;
+}
+
+.descripcion p {
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.tabla-form {
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.form, form {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="url"] {
+    width: 100%;
+    padding: 0.6rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form,label input [type="checkbox"] {
+
+    border-color: 1;
+}
+
+
+
+
+p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+label {
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+
+form input[type="submit"]{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 150px;
+    padding: 0.6rem 1.6rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+
+
