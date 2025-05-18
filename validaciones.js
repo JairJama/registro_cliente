@@ -12,23 +12,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let errores = [];
 
-        // Validación de nombre y apellido
+        // Expresiones regulares
+        const regexNombre = /^[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+$/; // Solo letras y espacios
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const regexCedula = /^\d{10}$/;
+
+        // Validación de nombre
         if (nombre === "") {
             errores.push("El nombre es obligatorio.");
+        } else if (!regexNombre.test(nombre)) {
+            errores.push("El nombre solo debe contener letras y espacios.");
         }
 
+        // Validación de apellido
         if (apellido === "") {
             errores.push("El apellido es obligatorio.");
+        } else if (!regexNombre.test(apellido)) {
+            errores.push("El apellido solo debe contener letras y espacios.");
         }
 
         // Validación de correo electrónico
-        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!regexEmail.test(email)) {
             errores.push("El correo electrónico no es válido.");
         }
 
-        // Validación de cédula (solo números y 10 dígitos)
-        const regexCedula = /^\d{10}$/;
+        // Validación de cédula
         if (!regexCedula.test(cedula)) {
             errores.push("La cédula debe tener exactamente 10 dígitos numéricos.");
         }
@@ -38,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
             errores.push("La dirección es obligatoria.");
         }
 
-        // Validación de fecha de nacimiento
+        // Validación de fecha
         if (fecha === "") {
             errores.push("La fecha de nacimiento es obligatoria.");
         }
 
-        // Validación de condiciones
+        // Validación de aceptación de condiciones
         if (!condiciones) {
             errores.push("Debes aceptar las condiciones.");
         }
