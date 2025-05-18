@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Ingreso Datos</title>
+    <script src="validaciones.js"></script>
+
 </head>
 <body>
     <div class="Formulario">
@@ -19,32 +21,32 @@
             </div>
             
             <p>
-                Nombre: <input type="text" name="name_control" autofocus required />
+                Nombre: <input type="text" name="name_control" id="name"  />
             </p>
             <p>
-                Apellido: <input type="text" name="apellido_control" required />
+                Apellido: <input type="text" name="apellido_control" id="apellido" />
             </p>
             <p>
-                Correo electrónico: <input type="email" name="email_control" required />
+                Correo electrónico: <input type="email" name="email_control" id="email" />
             </p>
             <p>
-                Cedula: <input type="text" name="cedula_control" required />
+                Cedula: <input type="text" name="cedula_control" id="cedula" />
             </p>
             <p>
-                direccion: <input type="text" name="direccion_control" required />
+                direccion: <input type="text" name="direccion_control" id="direccion" />
             </p>
             <p>
-                Fecha de nacimiento: <input type="date" name="date_control" autofocus required />
+                Fecha de nacimiento: <input type="date" name="date_control" id="date" />
             </p>
             <p>
                 <label>
-                    <input type="checkbox" name="condiciones" required />
+                    <input type="checkbox" name="condiciones" id="checkbox"  />
                     Declaro haber leído y aceptar las condiciones 
                 </label>
             </p>
             <div class="boton">
                 <p>
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Enviar" id="submit"/>
                 </p>
             </div>
             
